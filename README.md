@@ -65,7 +65,7 @@ _*Keys*_
 
 Potential Plans for the future:
 
-> Adding rain sound effects 
-> Adding ground splashes
-> Variable weather
-> Only appearing under clouds + thickness levels.
+- Adding rain sound effects 
+- Adding ground splashes
+- Variable weather
+- Only appearing under clouds + thickness levels.
