@@ -37,29 +37,28 @@ _*Keys*_
 
 (variable = example)
 
-body = Duna              // internal body name (must match exactly)
-type = Snow              // Snow or Rain - sets all the per-type defaults below
+- body = Duna              // internal body name (must match exactly)
+- type = Snow              // Snow or Rain - sets all the per-type defaults below
 
-biomes = Poles           // comma-separated, or repeat the key; omit = whole body
+- biomes = Poles           // comma-separated, or repeat the key; omit = whole body
 
-maxAltitude = 6000       // effect active below this ASL altitude (m)
-fadeFraction = 0.25      // emission fades over the top 25% of that band
-maxSurfaceSpeed = 250    // disables above this surface speed (m/s)
+- maxAltitude = 6000       // effect active below this ASL altitude (m)
+- fadeFraction = 0.25      // emission fades over the top 25% of that band
+- maxSurfaceSpeed = 250    // disables above this surface speed (m/s)
 
-fallSpeed = 1.0          // terminal fall speed along local gravity (m/s)
-windSpeed = 1.5          // mean horizontal wind (m/s); gusts via Perlin noise
-velocityJitter = 0.25    // random per-particle velocity spread (m/s)
-flutter = 0.7            // particle tumble via noise module (snow ~0.5-1, rain 0)
+- fallSpeed = 1.0          // terminal fall speed along local gravity (m/s)
+- windSpeed = 1.5          // mean horizontal wind (m/s); gusts via Perlin noise
+- velocityJitter = 0.25    // random per-particle velocity spread (m/s)
+- flutter = 0.7            // particle tumble via noise module (snow ~0.5-1, rain 0)
 
-sizeMin = 0.03           // particle size range (m)
-sizeMax = 0.09
-color = 1.0, 1.0, 1.0, 0.9   // RGBA, 0-1
-texture =                // optional texture path; blank = soft dot
-streakScale = 0.0        // rain only: velocity-stretch for streaks (e.g. 0.06)
+- sizeMin = 0.03           // particle size range (m)
+- sizeMax = 0.09
+- color = 1.0, 1.0, 1.0, 0.9   // RGBA, 0-1
+- texture =                // optional texture path; blank = soft dot
+- streakScale = 0.0        // rain only: velocity-stretch for streaks (e.g. 0.06)
 
-areaRadius = 45          // spawn disc radius (m)
-spawnHeight = 25         // spawn height above camera (m)
-killDepth = 35           // lifetime cutoff below camera (m)
+- areaRadius = 45          // spawn disc radius (m)
+- spawnHeight = 25         // spawn height above camera (m)
+- killDepth = 35           // lifetime cutoff below camera (m)
 
-emissionRate = 350       // particles per second at full intensity
-
+- emissionRate = 350       // particles per second at full intensity
