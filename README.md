@@ -63,7 +63,7 @@ _*Keys*_
 
 - emissionRate = 350       // particles per second at full intensity
 
-Potential Plans for the future:
+## Potential Plans for the future:
 
 - Adding rain sound effects 
 - Adding ground splashes
