@@ -62,3 +62,10 @@ _*Keys*_
 - killDepth = 35           // lifetime cutoff below camera (m)
 
 - emissionRate = 350       // particles per second at full intensity
+
+Potential Plans for the future:
+
+> Adding rain sound effects 
+> Adding ground splashes
+> Variable weather
+> Only appearing under clouds + thickness levels.
