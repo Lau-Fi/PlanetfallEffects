@@ -35,37 +35,37 @@ Everywhere else on Kerbin stays clear.
 
 _*Keys*_
 
-**PFE_PRECIPITATION**
-{
-    body = Duna              // internal body name (must match exactly)
-    type = Snow              // Snow or Rain - sets all the per-type defaults below
+variable:example
+---
+body = Duna              // internal body name (must match exactly)
+type = Snow              // Snow or Rain - sets all the per-type defaults below
 
-    // Region (optional)
-    biomes = Poles           // comma-separated, or repeat the key; omit = whole body
+// Region (optional)
+biomes = Poles           // comma-separated, or repeat the key; omit = whole body
 
-    // Activation envelope 
-    maxAltitude = 6000       // effect active below this ASL altitude (m)
-    fadeFraction = 0.25      // emission fades over the top 25% of that band
-    maxSurfaceSpeed = 250    // disables above this surface speed (m/s)
+// Activation envelope 
+maxAltitude = 6000       // effect active below this ASL altitude (m)
+fadeFraction = 0.25      // emission fades over the top 25% of that band
+maxSurfaceSpeed = 250    // disables above this surface speed (m/s)
 
-    // Motion 
-    fallSpeed = 1.0          // terminal fall speed along local gravity (m/s)
-    windSpeed = 1.5          // mean horizontal wind (m/s); gusts via Perlin noise
-    velocityJitter = 0.25    // random per-particle velocity spread (m/s)
-    flutter = 0.7            // particle tumble via noise module (snow ~0.5-1, rain 0)
+// Motion 
+fallSpeed = 1.0          // terminal fall speed along local gravity (m/s)
+windSpeed = 1.5          // mean horizontal wind (m/s); gusts via Perlin noise
+velocityJitter = 0.25    // random per-particle velocity spread (m/s)
+flutter = 0.7            // particle tumble via noise module (snow ~0.5-1, rain 0)
 
-    // Appearance 
-    sizeMin = 0.03           // particle size range (m)
-    sizeMax = 0.09
-    color = 1.0, 1.0, 1.0, 0.9   // RGBA, 0-1
-    texture =                // optional texture path; blank = soft dot
-    streakScale = 0.0        // rain only: velocity-stretch for streaks (e.g. 0.06)
+// Appearance 
+sizeMin = 0.03           // particle size range (m)
+sizeMax = 0.09
+color = 1.0, 1.0, 1.0, 0.9   // RGBA, 0-1
+texture =                // optional texture path; blank = soft dot
+streakScale = 0.0        // rain only: velocity-stretch for streaks (e.g. 0.06)
 
-    // Spawn volume around the camera
-    areaRadius = 45          // spawn disc radius (m)
-    spawnHeight = 25         // spawn height above camera (m)
-    killDepth = 35           // lifetime cutoff below camera (m)
+// Spawn volume around the camera
+areaRadius = 45          // spawn disc radius (m)
+spawnHeight = 25         // spawn height above camera (m)
+killDepth = 35           // lifetime cutoff below camera (m)
 
-    // Throughput
-    emissionRate = 350       // particles per second at full intensity
-}
+// Throughput
+emissionRate = 350       // particles per second at full intensity
+
